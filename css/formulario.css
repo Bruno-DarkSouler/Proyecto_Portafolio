@@ -1,0 +1,54 @@
+#form_mensaje input, #form_mensaje textarea{
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+textarea{
+    resize: none;
+}
+
+.contenedor_mensaje, .mensajes form{
+    background-color: rgb(176, 168, 255);
+    border: 3px solid rgb(80, 80, 255);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    /* max-width: calc(25% - 5rem); */
+}
+
+.seccion_mensajes{
+    padding: 0 17%;
+}
+
+.contenedor_mensaje{
+    height: 25rem;
+    min-width: 20vw;
+}
+
+.texto_nombre{
+    font-size: 1.2rem;
+}
+
+.texto_email{
+    color: rgb(77, 77, 77);
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+
+.texto_asunto{
+    font-size: 1.6rem;
+    margin: 0.3rem 0 1rem 0;
+}
+
+.texto_mensaje{
+    overflow-y: scroll;
+    max-height: 45%;
+}
+
+#titulo{
+    text-align: center;
+    margin: 3rem;
+}

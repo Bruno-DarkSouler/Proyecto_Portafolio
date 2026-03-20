@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="../css/calculadora.css">
+    <link rel="stylesheet" href="../css/general.css">
+</head>
+<body>
+
+    <div id="menu_desplegable">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+    </div>
+
+    <div id="cuerpo_menu" class="cerrado">
+        <div id="cabecera_menu">
+            <span>Contenido</span>
+            <div id="boton_cerrar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                </svg>
+            </div>
+        </div>
+        <div>
+            <ul id="lista_navegacion">
+            <li>
+                    <a href="../index.html">
+                        Acerca de mí
+                    </a>
+                </li>
+                <li>
+                    <a href="./galeria.html">
+                        Proyectos
+                    </a>
+                </li>
+                <li>
+                    <a href="./formulario.html">
+                        Mensajes
+                    </a>
+                </li>
+                <li>
+                    <a href="./calculadora.html">
+                        Calculadora
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="filtro_negro" class="ausente"></div>
+
+
+    <header>
+        <nav>
+            <a href="../index.html">Acerca de mi</a>
+            <a href="./galeria.html">Proyectos</a>
+            <a href="./formulario.html">Mensajes</a>
+            <a href="./calculadora.html">Calculadora</a>
+        </nav>
+        <input class="buscador" type="search" placeholder="Buscar pagina">
+    </header>
+    <div class="centrar_objeto">
+        <div class="calculadora">
+            <input type="text" id="pantalla" readonly placeholder="0">
+            <div class="botones">
+                <button onclick="limpiar()" class="btn-rojo">C</button>
+                <button onclick="borrarUno()">←</button>
+                <button onclick="agregar('/')">/</button>
+                <button onclick="agregar('*')">×</button>
+    
+                <button onclick="agregar('7')">7</button>
+                <button onclick="agregar('8')">8</button>
+                <button onclick="agregar('9')">9</button>
+                <button onclick="agregar('-')">-</button>
+    
+                <button onclick="agregar('4')">4</button>
+                <button onclick="agregar('5')">5</button>
+                <button onclick="agregar('6')">6</button>
+                <button onclick="agregar('+')">+</button>
+    
+                <button onclick="agregar('1')">1</button>
+                <button onclick="agregar('2')">2</button>
+                <button onclick="agregar('3')">3</button>
+                <button onclick="calcular()" class="btn-igual">=</button>
+    
+                <button onclick="agregar('0')" class="btn-cero">0</button>
+                <button onclick="agregar('.')">.</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/calculadora.js"></script>
+</body>
+</html>
